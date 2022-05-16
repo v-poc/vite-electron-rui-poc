@@ -13,6 +13,10 @@ The HelloWorld demo based on RUI (react-hooks) with Vite 2 and Electron.
 npm i
 ```
 
+> To resolve Electron specific `npm` install issue from China (Mainland), please use `cnpm` instead.
+>
+> cnpm i electron -D
+
 ### Compiles and hot-reloads for development
 ```
 npm start
