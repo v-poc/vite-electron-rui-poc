@@ -1,5 +1,7 @@
 # vite-electron-rui-poc
 
+<a href="https://nikoni.top/rui-next/docs/" target="_blank"><img src="https://img.shields.io/static/v1?label=&message=RUI%20docs%20%26%20demos&color=3366cc" alt="RUI docs & demos" /></a> [![Required Node.JS >= v14.17.0](https://img.shields.io/static/v1?label=node&message=%3E=14.17.0&logo=node.js&color=3f893e&style=flat)](https://nodejs.org/about/releases)
+
 ## INTRODUCTION
 
 The HelloWorld demo based on RUI (react-hooks) with Vite 2 and Electron.
