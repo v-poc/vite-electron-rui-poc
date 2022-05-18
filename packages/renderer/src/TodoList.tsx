@@ -1,7 +1,7 @@
-import React, { ChangeEvent, KeyboardEvent, useState } from "react"; // @ts-ignore
+import React, { ChangeEvent, useState } from "react"; // @ts-ignore
 import { Button, Empty, Icon, Input, Progress } from "rui-next";
 
-// Item Type
+// Item type
 export type ItemType = {
   text: string;
   done: boolean;
