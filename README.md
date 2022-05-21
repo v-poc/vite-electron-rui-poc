@@ -17,6 +17,8 @@ npm i
 
 > To resolve Electron specific `npm` install issue from China (Mainland), please use `cnpm` instead.
 >
+> npm i cnpm -g --registry=https://registry.npmmirror.com
+>
 > cnpm i electron -D
 
 ### Compiles and hot-reloads for development
