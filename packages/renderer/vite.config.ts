@@ -2,6 +2,7 @@ import { join } from 'path'
 import { builtinModules } from 'module'
 import { defineConfig, Plugin } from 'vite'
 import react from '@vitejs/plugin-react'
+import { viteMockServe } from "vite-plugin-mock";
 import optimizer from 'vite-plugin-optimizer'
 import resolve from 'vite-plugin-resolve'
 import pkg from '../../package.json'
@@ -15,6 +16,16 @@ export default defineConfig({
   plugins: [
     react(),
     electron(),
+    viteMockServe({
+      mockPath: "packages/renderer/src/mock",
+      localEnabled: true,
+      prodEnabled: true,
+      logger: true,
+      injectCode: `
+        import { setupMock } from "./mock/index";
+        setupMock();
+      `,
+    }),
     resolve({
       /**
        * Here you resolve some CommonJs module.
