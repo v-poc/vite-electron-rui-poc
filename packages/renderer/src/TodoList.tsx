@@ -1,5 +1,5 @@
-import React, { ChangeEvent, useEffect, useState } from "react"; // @ts-ignore
-import axios from "axios";
+import React, { ChangeEvent, useEffect, useState } from "react";
+import axios from "axios"; // @ts-ignore
 import { Button, Empty, Icon, Input, Progress } from "rui-next";
 
 // Item type
@@ -74,7 +74,9 @@ const TodoList: React.FC = () => {
   };
 
   // calc task progress percent
-  const taskProgress = tasks.length ? Math.round(100 * getCompletedCount() / tasks.length) : 0;
+  const taskProgress = tasks.length
+    ? Math.round((100 * getCompletedCount()) / tasks.length)
+    : 0;
 
   return (
     <div className="todo-list-wrapper">
@@ -96,11 +98,11 @@ const TodoList: React.FC = () => {
             onClick={createTask}
           ></Button>
         </div>
-        <p className="tasks">Tasks: { tasks.length }</p>
+        <p className="tasks">Tasks: {tasks.length}</p>
       </div>
       <div className="main-bd">
-        <p className="remaining">Remaining: { getRemainingCount() }</p>
-        <p className="completed">Completed: { getCompletedCount() }</p>
+        <p className="remaining">Remaining: {getRemainingCount()}</p>
+        <p className="completed">Completed: {getCompletedCount()}</p>
         <div className="row-flex">
           <Progress
             mode="circle"
@@ -113,14 +115,9 @@ const TodoList: React.FC = () => {
         </div>
       </div>
       {tasks.length > 0 ? (
-        <div
-          className="main-ft"
-        >
+        <div className="main-ft">
           {tasks.map((item: ItemType, index: number) => (
-            <div
-              key={`row${index}`}
-              className="row"
-            >
+            <div key={`row${index}`} className="row">
               <input
                 key={`checkbox${index}`}
                 type="checkbox"
@@ -130,18 +127,14 @@ const TodoList: React.FC = () => {
               />
               <label
                 key={`label${index}`}
-                className={`content${item.done ? " label-done": ""}`}
+                className={`content${item.done ? " label-done" : ""}`}
                 htmlFor={`checkbox${index}`}
               >
-                { item.text }
+                {item.text}
               </label>
               <div className="row-flex">
                 {item.done && (
-                  <Icon
-                    key={`checkIcon${index}`}
-                    type="check"
-                    color="#36C"
-                  />
+                  <Icon key={`checkIcon${index}`} type="check" color="#36C" />
                 )}
                 <Icon
                   key={`deleteIcon${index}`}
@@ -154,9 +147,7 @@ const TodoList: React.FC = () => {
           ))}
         </div>
       ) : (
-        <Empty
-          message="No result"
-        />
+        <Empty message="No result" />
       )}
     </div>
   );
