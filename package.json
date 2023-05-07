@@ -10,7 +10,7 @@
     "build": "tsc --noEmit -p packages/renderer/tsconfig.json && node scripts/build.mjs && electron-builder"
   },
   "engines": {
-    "node": ">=14.17.0"
+    "node": "^14.18.0 || >=16.0.0"
   },
   "dependencies": {
     "electron-store": "8.0.1"
