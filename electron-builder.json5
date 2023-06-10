@@ -2,36 +2,34 @@
  * @see https://www.electron.build/configuration/configuration
  */
 {
-  "appId": "YourAppID",
-  "productName": "YourAppName",
-  "copyright": "Copyright © 2022 ${author}",
-  "asar": true,
-  "directories": {
-    "output": "release/${version}",
-    "buildResources": "resources"
+  appId: "YourAppID",
+  asar: true,
+  directories: {
+    output: "release/${version}",
   },
-  "files": ["dist"],
-  "win": {
-    "target": [
+  files: ["dist-electron", "dist"],
+  mac: {
+    artifactName: "${productName}_${version}.${ext}",
+    target: ["dmg", "zip"],
+  },
+  win: {
+    target: [
       {
-        "target": "nsis",
-        "arch": ["x64"]
-      }
+        target: "nsis",
+        arch: ["x64"],
+      },
     ],
-    "artifactName": "${productName}-${version}-Setup.${ext}"
+    artifactName: "${productName}_${version}.${ext}",
   },
-  "nsis": {
-    "oneClick": false,
-    "perMachine": false,
-    "allowToChangeInstallationDirectory": true,
-    "deleteAppDataOnUninstall": false
+  nsis: {
+    oneClick: false,
+    perMachine: false,
+    allowToChangeInstallationDirectory: true,
+    deleteAppDataOnUninstall: false,
   },
-  "mac": {
-    "target": ["dmg"],
-    "artifactName": "${productName}-${version}-Installer.${ext}"
+  publish: {
+    provider: "generic",
+    channel: "latest",
+    url: "https://nikoni.top/vite-electron-rui-poc/releases/download/v0.3.2/",
   },
-  "linux": {
-    "target": ["AppImage"],
-    "artifactName": "${productName}-${version}-Installer.${ext}"
-  }
 }
