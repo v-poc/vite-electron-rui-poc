@@ -16,9 +16,10 @@ The HelloWorld demo based on RUI (react-hooks) with Vite 4 and Electron.
 npm i
 ```
 
-> To resolve Electron specific `npm` install issue from China (Mainland), please use `cnpm` instead.
+> To resolve Electron specific `npm` install issue from China (Mainland),
+> please use `cnpm` instead, the registry of `cnpm`: `https://registry.npmmirror.com`
 >
-> npm i cnpm -g --registry=https://registry.npmmirror.com
+> npm i cnpm -g
 >
 > cnpm i electron -D
 
