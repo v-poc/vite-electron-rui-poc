@@ -17,11 +17,14 @@ npm i
 ```
 
 > To resolve Electron specific `npm` install issue from China (Mainland),
-> please use `cnpm` instead, the registry of `cnpm`: `https://registry.npmmirror.com`
+> please use `cnpm` instead, the registry of `cnpm`: `https://registry.npmmirror.com`.
 >
 > npm i cnpm -g
 >
 > cnpm i electron -D
+>
+> To resolve Electron build issue (zip-download-timeout) from China (Mainland),
+> please put `electron-vX.Y.Z-darwin-arm64.zip` manually into the cache folder `~/Library/Caches/electron/`.
 
 ### Compiles and hot-reloads for development
 
