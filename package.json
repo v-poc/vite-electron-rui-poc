@@ -1,8 +1,8 @@
 {
   "name": "vite-electron-rui-poc",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "main": "dist-electron/main/index.js",
-  "description": "The RUI POC - Mobile web UI components based on react-hooks with vite4 and electron",
+  "description": "The RUI POC - Mobile web UI components based on react-hooks with vite5 and electron",
   "author": "Niko Ni",
   "license": "MIT",
   "debug": {
@@ -22,20 +22,21 @@
     "electron-updater": "^6.1.7"
   },
   "devDependencies": {
-    "@playwright/test": "^1.40.1",
-    "@types/react": "^18.2.45",
+    "@playwright/test": "^1.41.1",
+    "@types/node": "^20.11.13",
+    "@types/react": "^18.2.48",
     "@types/react-dom": "^18.2.18",
     "@vitejs/plugin-react": "^4.2.1",
-    "axios": "^1.6.2",
-    "electron": "^28.0.0",
+    "axios": "^1.6.7",
+    "electron": "^28.2.0",
     "electron-builder": "^24.9.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rui-next": "latest",
-    "sass": "^1.69.5",
+    "sass": "^1.70.0",
     "typescript": "^5.3.3",
     "vite": "latest",
-    "vite-plugin-electron": "^0.15.5",
+    "vite-plugin-electron": "^0.15.6",
     "vite-plugin-electron-renderer": "^0.14.5",
     "vite-plugin-mock": "2.9.6"
   },
