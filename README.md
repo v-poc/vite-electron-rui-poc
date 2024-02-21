@@ -12,16 +12,18 @@ The HelloWorld demo based on RUI (react-hooks) with Vite 5 and Electron.
 
 ### How to setup your project
 
+Install dependencies (use package manager: [pnpm](https://pnpm.io/))
+
 ```
-npm i
+pnpm i
 ```
 
 > To resolve Electron specific `npm` install issue from China (Mainland),
 > please use `cnpm` instead, the registry of `cnpm`: `https://registry.npmmirror.com`.
 >
-> npm i cnpm -g
+> npm i -g cnpm
 >
-> cnpm i electron -D
+> cnpm i -D electron
 >
 > To resolve Electron build issue (zip-download-timeout) from China (Mainland),
 > please put `electron-vX.Y.Z-darwin-arm64.zip` manually into the cache folder `~/Library/Caches/electron/`.
@@ -29,13 +31,13 @@ npm i
 ### Compiles and hot-reloads for development
 
 ```
-npm start
+pnpm start
 ```
 
 ### Compiles and minifies for production
 
 ```
-npm run build
+pnpm run build
 ```
 
 ### Customize configuration
