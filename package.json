@@ -18,29 +18,31 @@
     "e2e": "playwright test",
     "start": "vite"
   },
+  "packageManager": "pnpm@8.15.3",
   "dependencies": {
-    "electron-updater": "^6.1.7"
+    "electron-updater": "^6.1.8"
   },
   "devDependencies": {
-    "@playwright/test": "^1.41.1",
-    "@types/node": "^20.11.13",
-    "@types/react": "^18.2.48",
-    "@types/react-dom": "^18.2.18",
+    "@playwright/test": "^1.41.2",
+    "@types/node": "^20.11.19",
+    "@types/react": "^18.2.57",
+    "@types/react-dom": "^18.2.19",
     "@vitejs/plugin-react": "^4.2.1",
     "axios": "^1.6.7",
-    "electron": "^28.2.0",
-    "electron-builder": "^24.9.1",
+    "electron": "^29.0.0",
+    "electron-builder": "^24.12.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rui-next": "latest",
-    "sass": "^1.70.0",
+    "sass": "^1.71.1",
     "typescript": "^5.3.3",
     "vite": "latest",
-    "vite-plugin-electron": "^0.15.6",
+    "vite-plugin-electron": "^0.28.2",
     "vite-plugin-electron-renderer": "^0.14.5",
     "vite-plugin-mock": "2.9.6"
   },
   "engines": {
-    "node": "^18.0.0 || >=20.0.0"
+    "node": "^18.0.0 || >=20.0.0",
+    "pnpm": ">= 8"
   }
 }
