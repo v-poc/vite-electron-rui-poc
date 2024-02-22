@@ -1,6 +1,6 @@
 # vite-electron-rui-poc
 
-<a href="https://nikoni.top/rui-next/" target="_blank"><img src="https://img.shields.io/static/v1?label=&message=RUI%20docs%20%26%20demos&color=3366cc" alt="RUI docs & demos" /></a> [![Required Node.JS >= v16.0.0](https://img.shields.io/static/v1?label=node&message=%3E=16.0.0&logo=node.js&color=3f893e&style=flat)](https://nodejs.org/about/releases)
+<a href="https://nikoni.top/rui-next/" target="_blank"><img src="https://img.shields.io/static/v1?label=&message=RUI%20docs%20%26%20demos&color=3366cc" alt="RUI docs & demos" /></a>
 
 ## INTRODUCTION
 
